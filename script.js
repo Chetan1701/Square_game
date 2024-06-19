@@ -4,8 +4,17 @@ let s1  = document.getElementById("sq1");
     s1.innerHTML=`<h1>${r}</h1>`;
   })
   s1.addEventListener("mouseleave",function(){
-    s1.innerHTML="<h1>1</h1>"
+    s1.innerHTML="<h1>1</h1>";
   })
+  s1.addEventListener("dblclick",function(){
+    let r1 = Math.floor(Math.random()*256)
+    let r2 = Math.floor(Math.random()*256);
+    let r3 = Math.floor(Math.random()*256);
+    s1.style.backgroundColor = `rgb(${r1},${r2},${r3})`;
+  });
+  
+ 
+ 
 
   let s2 = document.getElementById("sq2")
   let clr = "green";
